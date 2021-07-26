@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="it">
+  <br>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Green SRL</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- fondamentale perchè o se no il dropdown non funziona -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="langMgr.js" ></script>
+    <script>
+      $(document).ready(function(){
+        $( ".product" ).hover(
+        function() {
+          $( "div.product" ).toggleClass('red');
+        }, function() {
+          $( "div.product" ).toggleClass('red');
+        }
+      );
+          });
+    </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    
+    
+  <body>
+    <svg class="symbol" width="10" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="italian_flag" viewBox="0 0 25 25">
+        <rect width="8" height="25" fill="#03A326"/>
+        <rect x="17" width="8" height="25" fill="#C13333"/>
+        <rect x="0.25" y="0.25" width="24.5" height="24.5" stroke="black" stroke-width="0.5"/>
+      </symbol>
+    </svg> 
+    <svg class="symbol" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="english_flag" viewBox="0 0 25 25">
+        <rect x="0.25" y="0.25" width="24.5" height="24.5" fill="#0356A3" stroke="black" stroke-width="0.5"/>
+        <path d="M0.5 1.5L23.5 24.5M1.5 24.5L24.5 1.5M0.5 23L23.5 0.5M1.5 0.5L24.5 23.5" stroke="white"/>
+        <path d="M0.5 24.5L24.5 0.5M0.5 0.5L24.5 24.5" stroke="#C13333"/>
+        <rect x="9" width="7" height="25" fill="#C13333"/>
+        <rect x="15" width="1" height="25" fill="white"/>
+        <rect x="9" width="1" height="25" fill="white"/>
+        <rect x="25" y="9" width="7" height="25" transform="rotate(90 25 9)" fill="#C13333"/>
+        <rect x="10" y="9" width="1" height="10" transform="rotate(90 10 9)" fill="white"/>
+        <rect x="25" y="9" width="1" height="10" transform="rotate(90 25 9)" fill="white"/>
+        <rect x="10" y="15" width="1" height="10" transform="rotate(90 10 15)" fill="white"/>
+        <rect x="25" y="15" width="1" height="10" transform="rotate(90 25 15)" fill="white"/>
+        <rect x="0.25" y="0.25" width="24.5" height="24.5" stroke="black" stroke-width="0.5"/>
+      </symbol>
+    </svg>  
+    <svg class="symbol" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="spanish_flag" viewBox="0 0 25 25">
+        <rect x="25" width="8" height="25" transform="rotate(90 25 0)" fill="#C13333"/>
+        <rect x="25" y="17" width="8" height="25" transform="rotate(90 25 17)" fill="#C13333"/>
+        <rect x="25" y="8" width="9" height="25" transform="rotate(90 25 8)" fill="#DDB320"/>
+        <rect x="8" y="10" width="5" height="4" transform="rotate(90 8 10)" fill="#A04808"/>
+        <rect x="0.25" y="0.25" width="24.5" height="24.5" stroke="black" stroke-width="0.5"/>
+      </symbol>
+    </svg>
+    <svg class="symbol" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="french_flag" viewBox="0 0 25 25">
+        <rect width="8" height="25" fill="#0356A3"/>
+        <rect x="17" width="8" height="25" fill="#C13333"/>
+        <rect x="0.25" y="0.25" width="24.5" height="24.5" stroke="black" stroke-width="0.5"/>
+      </symbol>
+    </svg> 
+    <div class="sticky-top pr-5 pl-5 bg-white">
+
+      <!-- HEADER -->
+      <header id="primo" class="container-fluid d-flex align-items-center px-5 pt-md-5 pt-sm-2">
+        <a href="#top">
+          <svg class="mr-auto banner" width=280 heigth=80 viewBox="0 0 206 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M42.88 29.48C47.84 29.48 51.8 27.48 54.56 25.12V13.36H42.64V17.64H49.8V22.88C48.08 24.16 45.68 25 43.04 25C37.32 25 33.52 20.76 33.52 15V14.92C33.52 9.56 37.44 5.04 42.6 5.04C46.16 5.04 48.28 6.2 50.44 8.04L53.56 4.32C50.68 1.88 47.68 0.52 42.8 0.52C34.36 0.52 28.36 7.16 28.36 15V15.08C28.36 23.24 34.12 29.48 42.88 29.48ZM60.9672 29H65.8872V19.24H72.0472L78.9272 29H84.7672L77.2072 18.4C81.0872 17.28 83.8472 14.52 83.8472 9.92V9.84C83.8472 7.4 83.0072 5.32 81.5272 3.8C79.7272 2.04 76.9672 0.999998 73.4472 0.999998H60.9672V29ZM65.8872 14.88V5.48H73.0472C76.6872 5.48 78.8472 7.12 78.8472 10.12V10.2C78.8472 13.04 76.6072 14.88 73.0872 14.88H65.8872ZM89.8734 29H110.833V24.6H94.7934V17.08H108.833V12.68H94.7934V5.4H110.633V0.999998H89.8734V29ZM116.67 29H137.63V24.6H121.59V17.08H135.63V12.68H121.59V5.4H137.43V0.999998H116.67V29ZM143.467 29H148.307V9.08L163.747 29H167.867V0.999998H163.027V20.36L148.027 0.999998H143.467V29ZM188.601 29.2C190.801 29.2 192.521 28.1 192.521 25.88V25.84C192.521 23.94 190.781 23.24 189.241 22.76C188.001 22.36 186.861 22.04 186.861 21.26V21.22C186.861 20.62 187.401 20.18 188.341 20.18C189.221 20.18 190.301 20.56 191.321 21.18L192.281 19.46C191.161 18.72 189.721 18.26 188.401 18.26C186.301 18.26 184.641 19.48 184.641 21.48V21.52C184.641 23.54 186.381 24.18 187.941 24.62C189.181 25 190.301 25.28 190.301 26.1V26.14C190.301 26.84 189.701 27.28 188.661 27.28C187.581 27.28 186.361 26.84 185.201 25.98L184.121 27.62C185.441 28.66 187.101 29.2 188.601 29.2ZM195 29H197.42V24.98C197.42 22.18 198.9 20.8 201.02 20.8H201.16V18.24C199.3 18.16 198.08 19.24 197.42 20.82V18.44H195V29ZM203.402 29H205.822V14.4H203.402V29Z" fill="#1D986C"/>
+            <circle cx="13" cy="7" r="5" fill="#981D25"/>
+            <circle cx="5" cy="22" r="5" fill="#981D25"/>
+        </svg>
+        </a>
+        <div class="navbar">
+          <menu class="w-75 d-flex justify-content-between">
+            <a class="pr-2 text-uppercase text-dark btn mr-5" href="#ciao" content="nav-el-1">contattaci</a>
+            <a class="pr-2 text-uppercase text-dark btn mr-5" href="#ema" content="nav-el-2">chi siamo</a>
+            <a class="text-uppercase text-dark btn mr-5"  href="#terzo" content="nav-el-3">prodotti</a>
+            <!-- <a class="text-uppercase text-dark btn" href="#" ><img class="img-flag-navbar mr-1" src="./assets/italy.png">lingua</a> -->
+
+            <!-- DROPDOWN LINGUA -->
+            <div class="dropdown">
+              <button class="btn btn-white dropdown-toggle lang-selector" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                <svg class="mr-1" fill="none" width="25" height="25">
+                  <use xlink:href="#italian_flag" />
+                </svg>
+                <span>LINGUA</span>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item lang-ui" href="#" lang="italiano">
+                  <svg fill="none" width="25" height="25">
+                    <use xlink:href="#italian_flag" />
+                  </svg>
+                  ITALIANO
+                </a>
+                <a class="dropdown-item lang-ui" href="#" lang="inglese">
+                  <svg fill="none" width="25" height="25">
+                    <use xlink:href="#english_flag" />
+                  </svg>
+                  INGLESE
+                </a>
+                <a class="dropdown-item lang-ui" href="#" lang="spagnolo">
+                  <svg fill="none" width="25" height="25">
+                    <use xlink:href="#spanish_flag" />
+                  </svg>
+                  SPAGNOLO
+                </a>
+                <a class="dropdown-item lang-ui" href="#" lang="francese">
+                  <svg fill="none" width="25" height="25">
+                    <use xlink:href="#french_flag" />
+                  </svg>
+                  FRANCESE
+                </a>
+              </div>
+            </div>
+          </menu>
+        </div>
+      </header>
+    </div>
+
+    <!-- PAGINA INIZIALE -->
+    
+    <div id="homepage" class="w-100 container-fluid d-flex align-items-center" style="margin-bottom: 5%;">
+      <img class="img-fluid" style="margin-left: 10%; width: 50%; height: 50%; " src="./assets/homepage1.png">
+      <div class="display-3" style="font-family: 'Playfair Display', serif; margin-left: 0px; font-size: 5vw;" content="mainpage-el-1">
+        Vendita<br>
+        all'ingrosso<br>
+        di Frutta e Verdura<br>
+      </div>
+      <a name="primo"></a>
+    </div>
+    
+    <!-- CONTATTI -->
+    <div id="about" class="container d-flex" style="height:500px; margin-bottom: 15%;"  data-aos="fade-up" data-aos-duration="400">
+      <div class="section-title" content="contattaci-el-laterale">contatti</div>
+      <div class="container border border-dark  h-100">
+        <div class="row h-100">
+          <div class="col-6 p-0">
+            <iframe class="h-100 w-100 border-right border-dark" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.674500563188!2d9.228421151238202!3d45.45621497899826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c67f0908b47b%3A0x705892a593a1724e!2sVia%20Cesare%20Lombroso%2C%20Milano%20MI!5e0!3m2!1sit!2sit!4v1588524754763!5m2!1sit!2sit" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> 
+          </div>
+          <div class="container col-6 p-5">
+            <div class="p-4">
+              <div class="container d-flex justify-content-start mb-5">
+                <div class="mr-4">
+                  <div class="d-flex flex-row mb-1">
+                    <svg class="mr-1" fill="none" width="25" height="25">
+                      <use xlink:href="#italian_flag" />
+                    </svg>
+                    <svg fill="none" width="25" height="25">
+                      <use xlink:href="#english_flag" />
+                    </svg>                 
+                  </div>
+                  <div class="d-flex flex-row">
+                    <svg class="mr-1" fill="none" width="25" height="25">
+                      <use xlink:href="#spanish_flag" />
+                    </svg>
+                    <svg fill="none" width="25" height="25">
+                      <use xlink:href="#french_flag" />
+                    </svg>                      
+                  </div>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="400">
+                  <div>UFFICIO</div>
+                  <div>greenmilanosrl@libero.it</div>
+                  <div>+39 02 84501712</div>
+                </div>
+              </div>
+              <div class="container d-flex justify-content-start mb-5">
+                <div class="mr-4">
+                  <div class="d-flex flex-row mb-1">
+                    <svg class="mr-1" fill="none" width="25" height="25">
+                      <use xlink:href="#italian_flag" />
+                    </svg>
+                    <svg fill="none" width="25" height="25">
+                      <use xlink:href="#english_flag" />
+                    </svg>                 
+                  </div>
+                  <div class="d-flex flex-row">
+                    <svg fill="none" width="25" height="25">
+                      <use xlink:href="#spanish_flag" />
+                    </svg>                
+                  </div>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="400">
+                  <div>RESPONSABILE COMMERCIALE</div>
+                  <div>+39 335 6445717</div>
+                </div>
+              </div>
+              <div class="container d-flex justify-content-start">
+                <div class="mr-4">
+                  <div class="d-flex flex-row mb-1">
+                    <svg class="mr-1" fill="none" width="25" height="25">
+                      <use xlink:href="#italian_flag" />
+                    </svg>
+                    <svg fill="none" width="25" height="25">
+                      <use xlink:href="#english_flag" />
+                    </svg>                   
+                  </div>
+                  <div class="d-flex flex-row">
+                    <svg class="mr-1" fill="none" width="25" height="25">
+                      <use xlink:href="#spanish_flag" />
+                    </svg>
+                    <svg fill="none" width="25" height="25">
+                      <use xlink:href="#french_flag" />
+                    </svg>                   
+                  </div>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="400">
+                  <div>GIUSEPPE LIOTTA</div>
+                  <div>+39 questo è il mio numero</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHI SIAMO -->
+    <div id="products" class="container d-flex" style="height: 500px; margin-bottom: 15%;">
+      <div class="section-title" content="chisiamo-el-laterale">chi siamo</div>
+      <div class="d-flex " >
+        <img class="img-fluid border border-dark  mr-3 width-img-whoweare" data-aos="fade-up" data-aos-duration="400" style="object-fit: cover;" src="assets/about_1.jpg" />
+        <img class="img-fluid border border-dark mr-3 width-img-whoweare"  data-aos="fade-up" data-aos-duration="800" style="object-fit: cover;" src="assets/about_2.jpg" />
+        <img class="img-fluid border border-dark width-img-whoweare" data-aos="fade-up" data-aos-duration="1200" style="object-fit: cover;" src="assets/about_3.jpg" />
+      </div>
+      <div>
+        <div class="content testo" data-aos="fade-up" data-aos-duration="2000" content="chisiamo-el-1">
+          Green srl, con sede operativa nel mercato ortofrutticolo all'ingrosso di 
+          Milano, svolge la sua attività nel settore da oltre tre generazioni. 
+          Commercializziamo frutta e verdura provenienti da tutto il territorio 
+          nazionale, da produttori selezionati, e prodotti provenienti da Paesi esteri.
+          La nostra attenzione è rivolta per lo più ai prodotti di stagione. Freschi, 
+          sani e differenziati per varietà, calibri e categoria. Abbiamo conoscenza 
+          dei prodotti e dei meccanismi di mercato. Tutto questo ci rende
+          competitivi e capaci di affrontare i cambiamenti che si pongono giorno 
+          per giorno. Offriamo il trasporto al domicilio dell'acquirente in Italia e in Europa.</br>
+          Amore e passione... per uno stile di vita sano ed equilibrato. </br>
+        </div>
+        <div id="signature" class="mt-5" data-aos="fade-up" data-aos-duration="400" >Green srl</div>
+      </div>
+    </div>
+
+    <!-- PRODOTTI -->
+    <div class="container d-flex mb-5" style="height: 395px;" data-aos="fade-up" data-aos-duration="400">
+      <div class="section-title" content="alcuniprodotti-el-laterale">alcuni prodotti</div>
+      <div class="container d-flex flex-row">
+        <div style="z-index: 1;" class="product-container d-flex flex-column mr-4 h-100 p-0">
+          <div class="product d-flex flex-column align-items-center justify-content-center border border-dark bg-light p-4 mb-4" data-aos="fade-up" data-aos-duration="400">
+            <img class="img-fluid product-img" style="object-fit: contain; height: 80px" src="assets/prodotti/pera.png" data-aos="fade-up" data-aos-duration="400">
+            <div data-aos="fade-up" data-aos-duration="400"><a name="terzo" content="alcuniprodotti-el-1">PERA</a></div>
+            <div class="hide" data-aos="fade-up" data-aos-duration="400" class="testo" content="alcuniprodotti-el-descrizione-1">La pera ha una polpa dolce caratterizzata da piccoli granellini. Mangiala fresca, ma provala anche cotta, con cannella e zucchero, o sciroppata. Il succo di pera è uno dei più amati dai bambini.</div>
+          </div>
+          <div class="product d-flex flex-column align-items-center justify-content-center border border-dark bg-light p-4" data-aos="fade-up" data-aos-duration="400">
+            <img class="img-fluid product-img" style="object-fit: contain;" src="assets/prodotti/cipollarossa.png" data-aos="fade-up" data-aos-duration="400">
+            <div data-aos="fade-up" data-aos-duration="400" content="alcuniprodotti-el-2">CIPOLLA</div>
+            <div class="hide" data-aos="fade-up" data-aos-duration="400" class="testo" content="alcuniprodotti-el-descrizione-2">La cipolla cruda dona una nota piccante e intensa nelle insalate; se rosolata o stufata diventa dolce e morbida; fritta aggiunge una dimensione dolce amara nel panino.</div>
+          </div>
+        </div>
+        <div style="z-index: 1;" class="product-container d-flex flex-column mr-4 h-100 p-0">
+          <div class="product d-flex flex-column align-items-center justify-content-center border border-dark bg-light p-4 mb-4" data-aos="fade-up" data-aos-duration="400">
+            <img class="img-fluid product-img" style="object-fit: contain;" src="assets/prodotti/peach.png" data-aos="fade-up" data-aos-duration="400">
+            <div data-aos="fade-up" data-aos-duration="400" content="alcuniprodotti-el-3">PESCA</div>
+            <div class="hide" data-aos="fade-up" data-aos-duration="400" class="testo" content="alcuniprodotti-el-descrizione-3">Bianche o gialle, le pesche sono molto dissetanti e non troppo dolci. Puoi mangiarle fresche, al limone, oppure in succo o in marmellata. </div>
+          </div>
+          <div class="product d-flex flex-column align-items-center justify-content-center border border-dark bg-light p-4" data-aos="fade-up" data-aos-duration="400">
+            <img class="img-fluid product-img" style="object-fit: contain;" src="assets/prodotti/pep.png" data-aos="fade-up" data-aos-duration="400">
+            <div data-aos="fade-up" data-aos-duration="400" content="alcuniprodotti-el-4">PEPERONE</div>
+            <div class="hide" data-aos="fade-up" data-aos-duration="400" class="testo" content="alcuniprodotti-el-descrizione-4">Sono veramente pochissime le verdure che possono vantare così tanti colori, forme, dimensioni e sapori come il peperone. Gustoso come pochi. </div>
+          </div>
+        </div>
+        <div style="z-index: 1;" class="product-container d-flex flex-column mr-4 h-100 p-0">
+          <div class="product d-flex flex-column align-items-center justify-content-center border border-dark bg-light p-4 mb-4" data-aos="fade-up" data-aos-duration="400">
+            <img class="img-fluid product-img" style="object-fit: contain;" src="assets/prodotti/albicocca.png" data-aos="fade-up" data-aos-duration="400">
+            <div data-aos="fade-up" data-aos-duration="400" content="alcuniprodotti-el-5">ALBICOCCA</div>
+            <div class="hide" data-aos="fade-up" data-aos-duration="400" class="testo" content="alcuniprodotti-el-descrizione-5">Polpa soda, profumata, dal sapore dolce-acidulo. Deliziosa quando è matura, si conserva tutto l’anno una volta essiccata. L’albicocca può essere utilizzata per produrre succhi di frutta e marmellata.</div>
+          </div>
+          <div class="product d-flex flex-column align-items-center justify-content-center border border-dark bg-light p-4" data-aos="fade-up" data-aos-duration="400">
+            <img class="img-fluid product-img" style="object-fit: contain;" src="assets/prodotti/melanzana.png" data-aos="fade-up" data-aos-duration="400">
+            <div data-aos="fade-up" data-aos-duration="400" content="alcuniprodotti-el-6">MELANZANA</div>
+            <div class="hide" data-aos="fade-up" data-aos-duration="400" class="testo" content="alcuniprodotti-el-descrizione-6">La melanzana viene consumata preferibilmente cotta. D'altra parte, la melanzana ha la proprietà di assorbire molto bene i grassi alimentari, tra cui l'olio, consentendo la preparazione di piatti molto ricchi e saporiti.</div>
+          </div>
+        </div>
+        <div style="z-index: 1;" class="product-container d-flex flex-column mr-4 h-100 p-0">
+          <div class="product d-flex flex-column align-items-center justify-content-center border border-dark bg-light p-4 mb-4" data-aos="fade-up" data-aos-duration="400">
+            <img class="img-fluid product-img" style="object-fit: contain;" src="assets/prodotti/orange.png" data-aos="fade-up" data-aos-duration="400">
+            <div data-aos="fade-up" data-aos-duration="400" content="alcuniprodotti-el-7">ARANCIA</div>
+            <div class="hide" data-aos="fade-up" data-aos-duration="400" class="testo" content="alcuniprodotti-el-descrizione-7">Dolce e aspra. Mangiala a spicchi, oppure bevila come spremuta o succo. Buone anche la marmellata di arance e le scorzette candite, quelle del panettone.</div>
+          </div>
+          <div class="product d-flex flex-column align-items-center justify-content-center border border-dark bg-light p-4" data-aos="fade-up" data-aos-duration="400">
+            <img class="img-fluid product-img" style="object-fit: contain;" src="assets/prodotti/broccolo.png" data-aos="fade-up" data-aos-duration="400">
+            <div data-aos="fade-up" data-aos-duration="400" content="alcuniprodotti-el-8">BROCCOLO</div>
+            <div class="hide" data-aos="fade-up" data-aos-duration="400" class="testo" content="alcuniprodotti-el-descrizione-8">Ha un gusto intenso ed è ricco di sostanze nutritive; inoltre si sposa bene con moltissime pietanze. Oltre alla più comune varietà verde scuro, i broccoli possono essere anche bianchi, gialli o viola.</div>
+          </div>
+        </div>
+        <div style="z-index: 1;" class="product-container d-flex flex-column h-100 p-0">
+          <div class="product d-flex flex-column align-items-center justify-content-center border border-dark bg-light p-4 mb-4" data-aos="fade-up" data-aos-duration="400">
+            <img class="img-fluid product-img" style="object-fit: contain;" src="assets/prodotti/ciliegia.png" data-aos="fade-up" data-aos-duration="400">
+            <div data-aos="fade-up" data-aos-duration="400" content="alcuniprodotti-el-9">CILIEGIA</div>
+            <div class="hide" data-aos="fade-up" data-aos-duration="400" class="testo" content="alcuniprodotti-el-descrizione-9">Dolce e succosa, la più pregiata è il durone, grosso e carnoso. Si può mangiare fresca, sul pane come marmellata, candita o sciroppata nelle torte.</div>
+          </div>
+          <div class="product d-flex flex-column align-items-center justify-content-center border border-dark bg-light p-4" data-aos="fade-up" data-aos-duration="400">
+            <img class="img-fluid product-img" style="object-fit: contain;" src="assets/prodotti/cavolfiore.png" data-aos="fade-up" data-aos-duration="400">
+            <div data-aos="fade-up" data-aos-duration="400" content="alcuniprodotti-el-10">CAVOLFIORE</div>
+            <div class="hide" data-aos="fade-up" data-aos-duration="400" class="testo" content="alcuniprodotti-el-descrizione-10">Saltato, fritto o passato in purea emana tutto il suo potenziale muschiato, con note di terra, un perfetto abbinamento per altri sapori forti e speziati.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <footer class="bg-light p-4">
+    <div>
+      <div>Copyright © 2020 GREEN SRL</div>
+      <div class="content">All rights reserved</div>
+      <div class="content">P.IVA: 06877980968</div>
+    </div>
+  </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript">
+      AOS.init({
+        duration: 1000, 
+      });
+    </script>
+    <script>
+      $(document).ready(() => {
+
+        //var langMgr = new langManager({pattern: 'json/', defLang: 'italiano', defTranslate: false});
+
+        //langMgr.translate();    
+
+        $('.lang-ui').on('click', (e) => {
+            //if (langMgr.lang != $(e.target).attr('lang')) {
+            //    langMgr.lang = $(e.target).attr('lang');
+
+                //langMgr.translate();
+                var flag;
+
+                switch($(e.target).attr('lang')) {
+                  case 'italiano':
+                    flag = "italian_flag"
+                  break;
+                  case 'francese':
+                    flag = "french_flag"
+                  break;
+                  case 'inglese':
+                    flag = "english_flag"
+                  break;
+                  case 'spagnolo':
+                    flag = "spanish_flag"
+                  break;
+                }
+
+                $('.lang-selector').html('<svg class="mr-1" fill="none" width="25" height="25"><use xlink:href="#'+flag+'" /></svg><span>LINGUA</span>');
+            //}
+        });
+
+      });
+    </script>
+  </body>
+</html>
